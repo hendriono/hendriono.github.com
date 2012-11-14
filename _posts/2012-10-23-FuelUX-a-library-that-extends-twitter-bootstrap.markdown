@@ -52,6 +52,19 @@ image: post_four.png
 
 <div class="row">	
 	<div class="span9 column">
+		{% if site.related_posts.size >= 1 %}
+			<h2>Artikel Terkait</h2>
+			<ul>
+				{% for post in site.related_posts limit: 5 %}
+				<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+				{% endfor %}
+			</ul>
+		{% endif %}
+	</div>
+</div>
+
+<div class="row">	
+	<div class="span9 column">
 			<p class="pull-right">{% if page.previous.url %} <a href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}"><i class="icon-chevron-left"></i></a> 	{% endif %}   {% if page.next.url %} 	<a href="{{page.next.url}}" title="Next Post: {{page.next.title}}"><i class="icon-chevron-right"></i></a> 	{% endif %} </p>  
 	</div>
 </div>
@@ -63,9 +76,9 @@ image: post_four.png
 		<div id="disqus_thread"></div>
 		<script type="text/javascript">
 			/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-			var disqus_shortname = 'ericjones'; // required: replace example with your forum shortname
+			var disqus_shortname = 'hendgithub'; // required: replace example with your forum shortname
 			var disqus_identifier = '{{ page.url }}';
-			var disqus_url = 'http://erjjones.github.com{{ page.url }}';
+			var disqus_url = 'http://hendriono.github.com{{ page.url }}';
 			
 			/* * * DON'T EDIT BELOW THIS LINE * * */
 			(function() {
