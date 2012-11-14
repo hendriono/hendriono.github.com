@@ -1,0 +1,10 @@
+---
+layout: layout
+---
+
+{% for category in site.sorted_categories %}
+Kategori: {{ category | first }} - {{ category | last | size }}
+{% for post in category.last %}
+posts in this category - {{ post.url }} {{ post.date | date_to_string }}
+{% endfor %}
+{% endfor %}
