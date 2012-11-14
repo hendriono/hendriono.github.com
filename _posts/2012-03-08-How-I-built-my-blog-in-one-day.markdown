@@ -144,6 +144,14 @@ image: post_one.jpg
 	  <h2>In Conclusion</h2>
 	  <p>I hope this sparks you to try out GitHub, Jekyll, Twitter Bootstrap and other open source web resources.  I have just begun to scratch the surface here and this blog doesn't attempt to cover all of details but I would like to hear what other cool integrations people are doing on their blogs.</p>	  
 	  <hr>
+		{% if site.related_posts.size >= 1 %}
+			<h2>Related</h2>
+			<ul>
+				{% for post in site.related_posts limit: 5 %}
+				<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+				{% endfor %}
+			</ul>
+		{% endif %}
 	</div>
 </div> 
 
@@ -160,7 +168,7 @@ image: post_one.jpg
 		<div id="disqus_thread"></div>
 		<script type="text/javascript">
 			/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-			var disqus_shortname = 'ericjones'; // required: replace example with your forum shortname
+			var disqus_shortname = 'hendgithub'; // required: replace example with your forum shortname
 			var disqus_identifier = '/blog/How-I-built-my-blog-in-one-day';
 			var disqus_url = '/blog/How-I-built-my-blog-in-one-day';
 			
