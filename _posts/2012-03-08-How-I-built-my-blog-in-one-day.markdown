@@ -144,6 +144,11 @@ image: post_one.jpg
 	  <h2>In Conclusion</h2>
 	  <p>I hope this sparks you to try out GitHub, Jekyll, Twitter Bootstrap and other open source web resources.  I have just begun to scratch the surface here and this blog doesn't attempt to cover all of details but I would like to hear what other cool integrations people are doing on their blogs.</p>	  
 	  <hr>
+	</div>
+</div> 
+
+<div class="row">	
+	<div class="span9 column">
 		{% if site.related_posts.size >= 1 %}
 			<h2>Related</h2>
 			<ul>
@@ -153,7 +158,7 @@ image: post_one.jpg
 			</ul>
 		{% endif %}
 	</div>
-</div> 
+</div>
 
 <div class="row">	
 	<div class="span9 column">
