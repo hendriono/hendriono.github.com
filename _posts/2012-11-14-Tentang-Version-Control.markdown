@@ -53,7 +53,7 @@ image: post_one.jpg
 			/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
 			var disqus_shortname = 'hendgithub'; // required: replace example with your forum shortname
 			var disqus_identifier = '{{ page.url }}';
-			var disqus_url = 'http://erjjones.github.com{{ page.url }}';
+			var disqus_url = 'http://hendriono.github.com{{ page.url }}';
 			
 			/* * * DON'T EDIT BELOW THIS LINE * * */
 			(function() {
