@@ -6,23 +6,27 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>{{ page.title }}</title>
-    <link rel="shortcut icon" href="/favicon.png">
     <link rel="alternate" type="application/rss+xml" href="http://feeds.feedburner.com/github/WnAr" title="Hendriono Blog Feed - hendriono.github.org">
-    
+
     <!-- Stylesheet -->
-    <link href="/js/fuelux/fuelux.min.css" rel="stylesheet" />
-    <link href="/js/fuelux/fuelux-responsive.min.css" rel="stylesheet" />
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/css/bootstrap-responsive.min.css" rel="stylesheet" />
     <link href="/css/docs.css" rel="stylesheet">
     <link href="/js/prettify/prettify.css" rel="stylesheet">
 
-    <!-- JavaScript -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" type="text/javascript"></script>
-    <script src="/js/fuelux/loader.min.js" type="text/javascript"></script>
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/ico/144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/ico/114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/ico/72.png">
+    <link rel="apple-touch-icon-precomposed" href="/ico/57.png">
   </head>
+  
   <body data-spy="scroll" data-target=".subnav" data-offset="50">
     {% include navigation.html %}
 
@@ -46,7 +50,11 @@
 
     {% include footer.html %}
 
-    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>    
+    <!-- JavaScript -->
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script> 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" type="text/javascript"></script>
+    <script src="/js/prettify/prettify.js" type="text/javascript"></script> 
+    <script src="/js/bootstrap.min.js" type="text/javascript"></script>   
     <script src="/js/custom.js" type="text/javascript"></script>    
 
     <!-- DisQus -->
