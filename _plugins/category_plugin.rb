@@ -20,7 +20,7 @@ module Jekyll
         cat_name = cat.first.gsub(/\s+/, '-')
 
         cat_page.data.merge!(
-          "title" => "somic.org category: #{cat_name}",
+          "title" => "category: #{cat_name}",
           "permalink" => "/category/#{cat_name}/",
           "category_name" => cat_name)
         cat_page.render(site.layouts, site.site_payload)
