@@ -27,6 +27,19 @@ image: post_one.jpg
 
 <div class="row">	
 	<div class="span9 column">
+		{% if site.related_posts.size >= 1 %}
+			<h2>Artikel Terkait</h2>
+			<ul>
+				{% for post in site.related_posts limit: 5 %}
+				<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+				{% endfor %}
+			</ul>
+		{% endif %}
+	</div>
+</div>
+
+<div class="row">	
+	<div class="span9 column">
 			<p class="pull-right">{% if page.pvious.url %} <a href="{{page.pvious.url}}" title="Previous Post: {{page.pvious.title}}"><i class="icon-chevron-left"></i></a> 	{% endif %}   {% if page.next.url %} 	<a href="{{page.next.url}}" title="Next Post: {{page.next.title}}"><i class="icon-chevron-right"></i></a> 	{% endif %} </p>  
 	</div>
 </div>
