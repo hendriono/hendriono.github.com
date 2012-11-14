@@ -169,8 +169,8 @@ image: post_one.jpg
 		<script type="text/javascript">
 			/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
 			var disqus_shortname = 'hendgithub'; // required: replace example with your forum shortname
-			var disqus_identifier = '/blog/How-I-built-my-blog-in-one-day';
-			var disqus_url = '/blog/How-I-built-my-blog-in-one-day';
+			var disqus_identifier = '{{ page.url }}';
+			var disqus_url = 'http://hendriono.github.com{{ page.url }}';
 			
 			/* * * DON'T EDIT BELOW THIS LINE * * */
 			(function() {
