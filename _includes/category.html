@@ -1,0 +1,11 @@
+<h2>Categori</h2>
+<ul>
+{% for category in site.sorted_categories %}
+  <li>
+    {{ category | first }}{{ category | last | size }}
+    {% for post in category.last %}{{ post.url }}
+      {{ post.date | date_to_string }}
+    {% endfor %}
+  </li>
+{% endfor %}
+</ul>
