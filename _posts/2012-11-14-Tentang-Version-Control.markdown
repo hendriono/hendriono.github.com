@@ -2,7 +2,7 @@
 layout: post
 title: Tentang Version Control
 category: Coding
-tags: VCS Git GitHub
+tags: git github
 year: 2012
 month: 11
 day: 14
