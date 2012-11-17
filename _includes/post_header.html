@@ -11,13 +11,13 @@
 </script>
 
 <div class="row">
-  <div class="span9 column">
+  <div class="span12 column">
     <p><h1>{{ page.title }}</h1></p>
   </div>
 </div>
 
 <div class="row">
-  <div class="span3 column">
+  <div class="span6 column">
     <h5><strong>{{ page.date | date: "%B %e, %Y" }} <small>. {{ page.category }} . <a href="http://hendriono.github.com{{ page.url }}#disqus_thread" data-disqus-identifier="{{ page.url }}">Comments</a></small></strong>
     <br/><small>Tags: {% for tag in page.tags %} <a href="/tags/{{ tag }}" title="View posts tagged with &quot;{{ tag }}&quot;"><u>{{ tag }}</u></a>  {% if forloop.last != true %} {% endif %} {% endfor %} </small><br/>
       {% assign tags_list = page.tags %} {% include helpers/tags_list.html %}<br/>
@@ -29,7 +29,7 @@
 </div>
 
 <div class="row">
-  <div class="span9 column">
+  <div class="span12 column">
     <hr>
   </div>
 </div>
