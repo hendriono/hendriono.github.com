@@ -7,6 +7,7 @@ year: 2012
 month: 11
 day: 14
 published: true
+comments: false
 summary: Apa itu version control, dan kenapa anda harus peduli? Version control adalah sebuah sistem yang mencatat setiap perubahan terhadap sebuah berkas atau kumpulan berkas sehingga pada suatu saat anda dapat kembali kepada salah satu versi dari berkas tersebut.
 image: post_one.jpg
 ---

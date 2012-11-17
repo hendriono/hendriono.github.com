@@ -7,6 +7,7 @@ year: 2012
 month: 10
 day: 23
 published: true
+comments: true
 summary: Fuel UX extends Twitter Bootstrap with additional lightweight JavaScript controls for your web application. 
 image: post_four.png
 ---

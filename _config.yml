@@ -10,3 +10,10 @@ var:
   tags_path : /tags.html
   search_path : /search.html
   bucket_list: /bucket.html
+
+author :
+  name : Hendriono
+  email : hendriono@gmail.com
+  github : hendriono
+  disqus_shortname: hendgithub
+  twitter : dedehendriono

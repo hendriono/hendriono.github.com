@@ -7,6 +7,7 @@ year: 2012
 month: 3
 day: 8
 published: true
+comments: true
 summary: A tutorial on how I built my blog
 image: post_one.jpg
 ---
