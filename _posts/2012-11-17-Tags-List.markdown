@@ -20,28 +20,28 @@ The tag list helper follows the <a href="http://ramnathv.github.com/lessons/boot
 <strong>List Sitewide Tags</strong>
 You can list sitewide tags by passing in the <code>site.tags</code> variable:
 <pre class="prettyprint linenums">&lt;ul&gt;
-  {% assign tags_list = site.tags %}
-  {% include helpers/tags_list.html %}
-&lt;/ul&gt;
+  &#123;% assign tags_list = site.tags %&#125;
+  &#123;% include helpers/tags_list.html %&#125;
+&lt;/ul&gt
 </pre>
 
 <strong>List Tags for a Specific Post</strong>
 You can also list tags specific to a post:
 <pre class="prettyprint linenums">&lt;ul&gt;
-  {% assign tags_list = page.tags %}
-  {% include helpers/tags_list.html %}
+  &#123;% assign tags_list = page.tags %&#125;
+  &#123;% include helpers/tags_list.html %&#125;
 &lt;/ul&gt;
 </pre>
 
 <strong>List Tags Per Post Iteratively</strong>
 Finally let’s iterate through all posts:
-<pre class="prettyprint linenums">{% for post in site.posts %}
-&lt;h3&gt;Tags for: {{post.title}}&lt;/h3&gt;  
-&lt;ul&gt;
-  {% assign tags_list = post.tags %}  
-  {% include helpers/tags_list.html %}
-&lt;/ul&gt;
-{% endfor %}
+<pre class="prettyprint linenums">&#123;% for post in site.posts %&#125;
+  &lt;h3&gt;Tags for: &#123;{post.title}&#125;&lt;/h3&gt;  
+  &lt;ul&gt;
+    &#123;% assign tags_list = post.tags %&#125;  
+    &#123;% include helpers/tags_list.html %&#125;
+  &lt;/ul&gt;
+&#123;% endfor %&#125;
 </pre>
 
 <strong>Source</strong>
