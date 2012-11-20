@@ -31,7 +31,7 @@ jQuery(document).ready(function() {
 			'displayLanguage': false
 		});
   if (!(document.location.protocol == "file:" || document.location.host == "localhost")) {
-  $('<div class="alert">Please keep your comments relevant to this post and try not to comment something like only "Thanks" in entire comment, use the Like button of Disqus, instead. You can use <a href="http://docs.disqus.com/help/19/">some HTML tags</a> if you like.</div>').insertAfter($("#post-comments h2"));
+  $('<div class="alert alert-info">Harap berkomentar yang relevan dengan artikel ini dan hindari untuk berkomentar seperti halnya "Terima Kasih", hindari berbagi link tak ada hubungan dengan artikel, gunakan saja tombol Bintang dari Disqus sebagai gantinya. Terima kasih atas kerjasamanya, selamat membaca dan berkomentar dengan baik dan sopan. Anda dapat menggunakan <a href="http://docs.disqus.com/help/19/">beberapa tag HTML</a> jika dibutuhkan.</div>').insertAfter($("#post-comments h2"));
   var g = "?";
   $.each($("a[href$=#disqus_thread]"), function (c, b) {
     g += "url" + c + "=" + encodeURIComponent(b.href) + "&"
