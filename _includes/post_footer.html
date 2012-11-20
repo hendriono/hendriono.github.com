@@ -21,23 +21,12 @@
 </div>
 
 <div class="row"> 
-    <div class="span12 columns">
+    <div class="span12 columns" id="post-comments">
     {% if page.comments %}    
     <h2>Area Komentar</h2>
       <p>Jangan ragu untuk mengomentari artikel tetapi tetap sesuai dengan topik.</p> 
     <div id="disqus_thread"></div>
-    <script type="text/javascript">
-      var disqus_shortname = '{{ site.author.disqus_shortname }}';
-      var disqus_identifier = '{{ page.url }}';
-      var disqus_url = 'http://hendriono.github.com{{ page.url }}';
-      (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-      })();
-    </script>
-    <noscript>Mohon aktifkan JavaScript untuk melihat <a href="http://disqus.com/?ref_noscript">komentar yang disediakan oleh Disqus.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink">komentar blog disediakan oleh <span class="logo-disqus">Disqus</span></a>
+    <button class="btn btn-small" onclick="$.ajaxSetup({cache:true});$.getScript(&quot;http://hendgithub.disqus.com/embed.js&quot;);$.ajaxSetup({cache:false});$(this).remove();" type="button">Click to load comments or to write a comment</button>
     {% endif %}
   </div>
 </div>
