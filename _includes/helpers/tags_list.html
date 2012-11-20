@@ -19,11 +19,11 @@ Usage:
 
 {% if tags_list.first[0] == null %}
   {% for tag in tags_list %} 
-  	<a href="{{ site.var.tags_path }}#{{ tag }}-ref"><span class="label label-info">{{ tag }}</span><span class="label label-warning">{{ site.tags[tag].size }}</span></a>
+  	<a href="{{ site.var.tags_path }}#{{ tag }}-ref"><span class="label label-info">{{ tag }}</span> <span class="label label-warning">{{ site.tags[tag].size }}</span></a>
   {% endfor %}
 {% else %}
   {% for tag in tags_list %} 
-  	<li><a href="{{ site.var.tags_path }}#{{ tag[0] }}-ref"><span class="label label-info">{{ tag[0] }}</span><span class="label label-warning">{{ tag[1].size }}</span></a></li>
+  	<li><a href="{{ site.var.tags_path }}#{{ tag[0] }}-ref"><span class="label label-info">{{ tag[0] }}</span> <span class="label label-warning">{{ tag[1].size }}</span></a></li>
   {% endfor %}
 {% endif %}
 
