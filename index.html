@@ -16,7 +16,7 @@ title: "Hendriono"
         <p>{{ post.summary }}</p>
         <p>
         <i class="icon-calendar"></i> {{ post.date | date: "%B %e, %Y" }}  
-        | <i class="icon-tags"></i> Tags :{% for tag in post.tags %} <a href="/tags/{{ tag }}" rel="tooltip" title="View posts tagged with &quot;{{ tag }}&quot;"><span class="label label-info">{{ tag }}</span></a>  {% if forloop.last != true %} {% endif %} {% endfor %}		            
+        | <i class="icon-tags"></i> Tags :{% assign tags_list = page.tags %} {% include helpers/tags_list.html %}
         </p>
         <div class="row"><div class="span3 column"><a href="http://hendriono.github.com{{ post.url }}#disqus_thread" data-disqus-identifier="{{ post.url }}" class="btn btn-small"></a></div><div class="span3 column "><span class="pull-right"><a href="{{ post.url }}" class="btn btn-small"><i class="icon-fullscreen"></i> Selengkapnya</a></span></div></div>
       </div>
