@@ -21,10 +21,9 @@
 </div>
 
 <div class="row"> 
-    <div class="span12 columns">
-    {% if page.comments %}    
-    <h2>Area Komentar</h2>
-      <p>Jangan ragu untuk mengomentari artikel tetapi tetap sesuai dengan topik.</p> 
+    <div class="span12 columns" id="post-comments">
+    {% if page.comments %}   
+    <h2><a href="http://hendriono.github.com{{ page.url }}#disqus_thread" data-disqus-identifier="{{ page.url }}"></a></h2>
     <div id="disqus_thread"></div>
     <button class="btn btn-small" onclick="$.ajaxSetup({cache:true});$.getScript(&quot;http://hendgithub.disqus.com/embed.js&quot;);$.ajaxSetup({cache:false});$(this).remove();" style="width:100%;margin:10px auto;" type="button">Click to load comments or to write a comment</button>
     {% endif %}
