@@ -1,0 +1,19 @@
+{
+    "name": "hendriono/hendriono.github.com"
+  , "description": "Hendriono Blog on GitHub"
+  , "version": "1.0.0"
+  , "keywords": ["hendriono", "github"]
+  , "homepage": "http://hendriono.github.com"
+  , "author": "Hendriono"
+  , "repository": {
+      "type": "git"
+    , "url": "https://github.com/hendriono/hendriono.github.com.git"
+  }
+  , scripts: {
+    test: "vows --spec"
+  }
+  , scripts: {
+    pretest: "NODE_ENV=test node setup_db",
+    test: "expresso test/*"
+  }
+}
