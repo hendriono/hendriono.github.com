@@ -1,10 +1,10 @@
-<div class="row">
+<div class="row-fluid">
   <div class="span12 column">
     <p><h1>{{ page.title }}</h1></p>
   </div>
 </div>
 
-<div class="row">
+<div class="row-fluid">
   <div class="span10 column">
     <p><i class="icon-calendar"></i> {{ page.date | date: "%B %e, %Y" }} | {{ page.category }} | <i class="icon-tags"></i> {% assign tags_list = page.tags %} {% include helpers/tags_list.html %}</p>
     <p><a href="https://twitter.com/share" class="twitter-share-button" data-via="dedehendriono">Tweet</a> <g:plusone size="medium"></g:plusone></p>
@@ -14,7 +14,7 @@
   </div>  
 </div>
 
-<div class="row">
+<div class="row-fluid">
   <div class="span12 column">
     <hr>
   </div>
