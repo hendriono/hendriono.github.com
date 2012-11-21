@@ -12,10 +12,12 @@ body {
   position: relative;
   padding-top: 80px;
   background-color: #fff;
-  background-image: url(http://subtlepatterns.com/patterns/rockywall.png);
+  background-image: url('../img/rockywall.png');
   background-repeat: repeat;
   background-position: 0 40px;
   font-family: 'Open Sans', sans-serif;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 1);
+  color: #3B3B3B;
 }
 
 /* Tweak navbar brand link to be super sleek
@@ -286,7 +288,6 @@ hr.soften {
   margin-top: 45px;
   padding: 35px 0 36px;
   border-top: 1px solid #e5e5e5;
-  background-color: #f9f9f9;
 }
 .footer p {
   margin-bottom: 0;

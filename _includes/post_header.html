@@ -5,13 +5,10 @@
 </div>
 
 <div class="row">
-  <div class="span10 column">
+  <div class="span12 column">
     <p><i class="icon-calendar"></i> {{ page.date | date: "%B %e, %Y" }} | {{ page.category }} | <i class="icon-tags"></i> {% assign tags_list = page.tags %} {% include helpers/tags_list.html %}</p>
     <p><a href="https://twitter.com/share" class="twitter-share-button" data-via="dedehendriono">Tweet</a> <g:plusone size="medium"></g:plusone></p>
-  </div>
-  <div class="span2 column">
-    <p class="pull-right">{% if page.previous.url %} <a href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}"><i class="icon-chevron-left"></i></a>   {% endif %}   {% if page.next.url %}  <a href="{{page.next.url}}" title="Next Post: {{page.next.title}}"><i class="icon-chevron-right"></i></a>   {% endif %} </p>  
-  </div>  
+  </div> 
 </div>
 
 <div class="row">
