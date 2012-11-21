@@ -5,6 +5,30 @@
   Special styles for presenting Bootstrap's documentation and examples
 */
 
+@font-face {
+  font-family: 'Tinos';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Tinos Italic'), local('Tinos-Italic'), url(http://themes.googleusercontent.com/static/fonts/tinos/v4/Y7xfdQVPJnZxkSfPPnlyjw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Tinos';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Tinos Bold'), local('Tinos-Bold'), url(http://themes.googleusercontent.com/static/fonts/tinos/v4/r7ygpzWtF3nxLEGd26jZfvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+@font-face {
+  font-family: 'Tinos';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Tinos Bold Italic'), local('Tinos-BoldItalic'), url(http://themes.googleusercontent.com/static/fonts/tinos/v4/S7imToYaQDRqHLMz0Hj4eBsxEYwM7FgeyaSgU71cLG0.woff) format('woff');
+}
+@font-face {
+  font-family: 'Tinos';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Tinos'), url(http://themes.googleusercontent.com/static/fonts/tinos/v4/C8vzv480UKDveCPk8l9XHQ.woff) format('woff');
+}
 
 /* Body and structure
 -------------------------------------------------- */
@@ -12,8 +36,8 @@ body {
   position: relative;
   padding-top: 80px;
   background-color: #fff;
-  /*background-image: url(http://subtlepatterns.com/patterns/rockywall.png);*/
-  background-repeat: repeat-x;
+  background-image: url(http://subtlepatterns.com/patterns/rockywall.png);
+  background-repeat: repeat;
   background-position: 0 40px;
 }
 
