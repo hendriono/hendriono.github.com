@@ -39,6 +39,7 @@ body {
   background-image: url(http://subtlepatterns.com/patterns/rockywall.png);
   background-repeat: repeat;
   background-position: 0 40px;
+  font-family: "Tinos", Georgia, Times, Serif;
 }
 
 /* Tweak navbar brand link to be super sleek
@@ -873,4 +874,43 @@ a.social.gplus {
 
 a.social.gplus:hover {
   background: url(/img/social_icons.png) -170px -34px no-repeat;
+}
+
+/*===================
+    Media Queries
+===================*/
+
+@media screen and (max-width: 1024px), screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+
+  body {
+    font-size: 137.5%;
+  }
+
+}
+
+@media screen and (max-width: 768px), screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+  body {
+    font-size: 125.5%;
+  }
+
+}
+
+@media screen and (max-width: 640px), screen and (max-width: 640px) and (-webkit-min-device-pixel-ratio: 2) {
+
+  body {
+    font-size: 112.5%;
+  }
+}
+
+@media screen and (max-width: 480px), screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+
+  body {
+    font-size: 87.5%;
+  }
+}
+@media screen and (max-width: 320px), screen and (max-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+
+  body {
+    font-size: 100%;
+  }
 }
