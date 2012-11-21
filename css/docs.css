@@ -39,7 +39,7 @@ body {
   background-image: url(http://subtlepatterns.com/patterns/rockywall.png);
   background-repeat: repeat;
   background-position: 0 40px;
-  font-family: "Tinos", Georgia, Times, Serif;
+  font: 400 150%/ 1.5 "Tinos", Georgia, Times, Serif;
 }
 
 /* Tweak navbar brand link to be super sleek
