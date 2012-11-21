@@ -1,5 +1,5 @@
 <h2>Categori</h2>
-<ul>
+<ol>
 {% for category in site.sorted_categories %}
   <li>
     {{ category | first }}{{ category | last | size }}
@@ -8,4 +8,4 @@
     {% endfor %}
   </li>
 {% endfor %}
-</ul>
+</ol>

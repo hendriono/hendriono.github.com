@@ -1,6 +1,6 @@
 ---
 layout: layout
-title: "Hendriono"
+title: "Halaman Utama"
 ---
 
 {% for post in site.posts offset: 0 limit: 50 %}
