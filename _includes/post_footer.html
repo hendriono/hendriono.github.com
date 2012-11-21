@@ -21,6 +21,7 @@
 </div>
 
 <div class="row"> 
+<<<<<<< HEAD
     <div class="span12 columns">
     {% if page.comments %}    
     <h2>Area Komentar</h2>
@@ -38,6 +39,13 @@
     </script>
     <noscript>Mohon aktifkan JavaScript untuk melihat <a href="http://disqus.com/?ref_noscript">komentar yang disediakan oleh Disqus.</a></noscript>
     <a href="http://disqus.com" class="dsq-brlink">komentar blog disediakan oleh <span class="logo-disqus">Disqus</span></a>
+=======
+    <div class="span12 columns" id="post-comments">
+    {% if page.comments %}   
+    <h2><a href="http://hendriono.github.com{{ page.url }}#disqus_thread" data-disqus-identifier="{{ page.url }}"></a></h2>
+    <div id="disqus_thread"></div>
+    <button class="btn btn-small" onclick="$.ajaxSetup({cache:true});$.getScript(&quot;http://hendgithub.disqus.com/embed.js&quot;);$.ajaxSetup({cache:false});$(this).remove();" style="width:100%;margin:10px auto;" type="button"><strong>Klik untuk membuka area komentar atau untuk menuliskan sebuah komentar</strong></button>
+>>>>>>> b5b83b3b3d91dd9d1c2be4bcd014612cd5f64cfe
     {% endif %}
   </div>
 </div>
