@@ -4,34 +4,7 @@
   Bootstrap's documentation styles
   Special styles for presenting Bootstrap's documentation and examples
 */
-
-<<<<<<< HEAD
-=======
-@font-face {
-  font-family: 'Tinos';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Tinos Italic'), local('Tinos-Italic'), url(http://themes.googleusercontent.com/static/fonts/tinos/v4/Y7xfdQVPJnZxkSfPPnlyjw.woff) format('woff');
-}
-@font-face {
-  font-family: 'Tinos';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Tinos Bold'), local('Tinos-Bold'), url(http://themes.googleusercontent.com/static/fonts/tinos/v4/r7ygpzWtF3nxLEGd26jZfvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
-}
-@font-face {
-  font-family: 'Tinos';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Tinos Bold Italic'), local('Tinos-BoldItalic'), url(http://themes.googleusercontent.com/static/fonts/tinos/v4/S7imToYaQDRqHLMz0Hj4eBsxEYwM7FgeyaSgU71cLG0.woff) format('woff');
-}
-@font-face {
-  font-family: 'Tinos';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Tinos'), url(http://themes.googleusercontent.com/static/fonts/tinos/v4/C8vzv480UKDveCPk8l9XHQ.woff) format('woff');
-}
->>>>>>> b5b83b3b3d91dd9d1c2be4bcd014612cd5f64cfe
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
 
 /* Body and structure
 -------------------------------------------------- */
@@ -39,16 +12,10 @@ body {
   position: relative;
   padding-top: 80px;
   background-color: #fff;
-<<<<<<< HEAD
-  /*background-image: url(http://subtlepatterns.com/patterns/rockywall.png);*/
-  background-repeat: repeat-x;
-  background-position: 0 40px;
-=======
   background-image: url(http://subtlepatterns.com/patterns/rockywall.png);
   background-repeat: repeat;
   background-position: 0 40px;
-  font: 400 150%/ 1.5 "Tinos", Georgia, Times, Serif;
->>>>>>> b5b83b3b3d91dd9d1c2be4bcd014612cd5f64cfe
+  font-family: 'Open Sans', sans-serif;
 }
 
 /* Tweak navbar brand link to be super sleek
@@ -883,46 +850,4 @@ a.social.gplus {
 
 a.social.gplus:hover {
   background: url(/img/social_icons.png) -170px -34px no-repeat;
-<<<<<<< HEAD
-=======
-}
-
-/*===================
-    Media Queries
-===================*/
-
-@media screen and (max-width: 1024px), screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
-
-  body {
-    font-size: 137.5%;
-  }
-
-}
-
-@media screen and (max-width: 768px), screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
-  body {
-    font-size: 125.5%;
-  }
-
-}
-
-@media screen and (max-width: 640px), screen and (max-width: 640px) and (-webkit-min-device-pixel-ratio: 2) {
-
-  body {
-    font-size: 112.5%;
-  }
-}
-
-@media screen and (max-width: 480px), screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
-
-  body {
-    font-size: 87.5%;
-  }
-}
-@media screen and (max-width: 320px), screen and (max-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
-
-  body {
-    font-size: 100%;
-  }
->>>>>>> b5b83b3b3d91dd9d1c2be4bcd014612cd5f64cfe
 }

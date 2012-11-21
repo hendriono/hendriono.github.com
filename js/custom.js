@@ -30,8 +30,6 @@ jQuery(document).ready(function() {
 			'displayAccountInformations': false,
 			'displayLanguage': false
 		});
-<<<<<<< HEAD
-=======
   if (!(document.location.protocol == "file:" || document.location.host == "localhost")) {
   $('<div class="alert alert-info">Harap berkomentar yang relevan dengan artikel ini dan hindari untuk berkomentar seperti halnya "Terima Kasih", hindari berbagi link tak ada hubungan dengan artikel, gunakan saja tombol Bintang dari Disqus sebagai gantinya. Terima kasih atas kerjasamanya, selamat membaca dan berkomentar dengan baik dan sopan. Anda dapat menggunakan <a href="http://docs.disqus.com/help/19/">beberapa tag HTML</a> jika dibutuhkan.</div>').insertAfter($("#post-comments h2"));
   var g = "?";
@@ -51,5 +49,4 @@ jQuery(document).ready(function() {
     cache: false
   })
   }
->>>>>>> b5b83b3b3d91dd9d1c2be4bcd014612cd5f64cfe
 });
