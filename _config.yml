@@ -17,3 +17,6 @@ author :
   github : hendriono
   disqus_shortname: hendgithub
   twitter : dedehendriono
+
+production_url : http://hendriono.github.com
+description: "Kyll BloGit membahas tentang Jekyll, GitHub dan hal-hal yang terkait dengan keduanya"

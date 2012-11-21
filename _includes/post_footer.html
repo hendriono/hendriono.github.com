@@ -16,23 +16,9 @@
 <div class="row"> 
     <div class="span12 columns" id="post-comments">
     {% if page.comments %}   
-    <h2><a href="http://hendriono.github.com{{ page.url }}#disqus_thread" data-disqus-identifier="{{ page.url }}"></a></h2>
+    <h2>Silahkan Berkomentar</h2>
     <div id="disqus_thread"></div>
     <button class="btn btn-small" onclick="$.ajaxSetup({cache:true});$.getScript(&quot;http://hendgithub.disqus.com/embed.js&quot;);$.ajaxSetup({cache:false});$(this).remove();" style="width:100%;margin:10px auto;" type="button"><strong>Klik untuk membuka area komentar atau untuk menuliskan sebuah komentar</strong></button>
     {% endif %}
   </div>
 </div>
-
-<!-- Twitter -->
-<script>
-  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-</script>
-
-<!-- Google + -->
-<script type="text/javascript">
-  (function() {
-  var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-  po.src = 'https://apis.google.com/js/plusone.js';
-  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-  })();
-</script>

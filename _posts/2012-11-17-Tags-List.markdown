@@ -10,6 +10,7 @@ published: true
 comments: true
 summary: The tag list helper lists tags and their total counts. The tag list helper follows the Jekyll-bootstrap include helper strategy.
 image: jekyll.png
+description: "Tentang Percobaan BloGit"
 ---
 
 The tag list helper lists tags and their total counts. 

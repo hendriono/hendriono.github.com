@@ -11,8 +11,7 @@
 body {
   position: relative;
   padding-top: 80px;
-  background-color: #fff;
-  background-image: url('../img/rockywall.png');
+  background-color: #f7f7f7;
   background-repeat: repeat;
   background-position: 0 40px;
   font-family: 'Open Sans', sans-serif;
