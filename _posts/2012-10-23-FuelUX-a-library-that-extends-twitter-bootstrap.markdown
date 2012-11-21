@@ -12,8 +12,6 @@ summary: Fuel UX extends Twitter Bootstrap with additional lightweight JavaScrip
 image: post_four.png
 ---
 
-<div class="row">	
-	<div class="span9 columns">
 		<h2>Preface</h2>
 		<p><a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a> has helped me as a middle tier backend developer to create styled responsive websites and proof of concept apps with super ease.  Recently a team of developers where I work have extended Twitter Bootstrap with more controls, grunt, AMD support, and have open sourced it for others to contribute.  This post will show you how easy it was to switch to FuelUX which gives me all that Twitter Bootstrap has and <a href="http://code.exacttarget.com/devcenter/fuel-ux" target="_blank">some more controls</a>.</p>
 		<p>
@@ -48,5 +46,4 @@ image: post_four.png
 		<h2>Conclusion</h2>
 		<p>It is clear that <a href="http://exacttarget.github.com/fuelux/" target="_blank">FuelUX</a> will grow with Bootstrap and also with support of new controls along the way. It looks super polished, nicely done!  I can't wait to watch this grow and see what others contribute!</p>
 		<p><a href="http://news.ycombinator.com/item?id=4688066" target="_blank" title="See what others are saying on Hacker News"><img src="/img/yc500.gif" title="See {{ page.title }} on Hacker News" /> Hacker News link</a></p>
-	</div>
-</div>
+<hr>

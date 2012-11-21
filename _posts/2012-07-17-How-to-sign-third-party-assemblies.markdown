@@ -12,8 +12,6 @@ summary: You do it once in a blue moon so here is a reminder for how to sign tha
 image: post_three.jpg
 ---
 
-<div class="row">	
-	<div class="span9 columns">
 	  <h2>Preface</h2>
 	  <p>So you added a third party dll to your project and now you need to sign it.  Sometimes you might not have the code to modify the assembly and add your strong name key.  This post will describe how you can go about signing a third party assembly without compiling the code.</p>
 	  <p><a href="http://www.microsoft.com/en-us/download/details.aspx?id=19988" alt="Go to Microsoft Download Center" class="btn btn-info" target="_blank">Download .NET Framework 2.0</a></p>
@@ -35,5 +33,4 @@ image: post_three.jpg
 		<p><pre><code>Assembly 'ThirdParty.dll' is valid</code></pre></p>
 		<h2>Conclusion</h2>
 		<p>This is certainly happy path and only works with assemblies built using .NET libraries.  If other libraries are included in the assembly you are trying to sign then you'll have to do some additional steps not listed on this post.</p>
-	</div>
-</div>
+<hr>

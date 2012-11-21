@@ -12,8 +12,6 @@ summary: A follow up post on how I built my blog
 image: post_two.jpg
 ---
 
-<div class="row">
-	<div class="span9 columns">
 	  <h2>Preface</h2>
 	  <p>This is a follow up from my last post <a href="http://erjjones.github.com/blog/How-I-built-my-blog-in-one-day/" title="Go to How I built my blog in one day"><i>How I built my blog in one day</i></a>.  There were several items I left out and several more that I have refined.  This blog still only begins to scratch the surface on what someone can do with Jekyll and bootstraping other technologies, so please comment and share your ideas.</p>  	 	  
 	  <p><a href="https://github.com/erjjones/erjjones.github.com/zipball/master" class="btn btn-info">Download source</a></p>
@@ -75,5 +73,3 @@ image: post_two.jpg
 	  <h2>In Conclusion</h2>
 	  <p>Again, I hope this sparks you to try out GitHub, Jekyll, Twitter Bootstrap and other open source web resources.  I have just begun to scratch the surface here and this blog doesn't attempt to cover all of details but I would like to hear what other cool integrations people are doing on their blogs.</p>	  
 	  <hr>
-	</div>
-</div>

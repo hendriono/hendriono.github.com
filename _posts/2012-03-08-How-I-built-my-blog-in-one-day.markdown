@@ -12,8 +12,6 @@ summary: A tutorial on how I built my blog
 image: post_one.jpg
 ---
 
-<div class="row">	
-	<div class="span9 columns">
 	  <h2>Preface</h2>
 	  <p>How I did this blog is nothing new, as a matter of fact many have done exactly what I did and it is well documented. This post is just on how I did it and since it is all very fresh in my mind I thought I would write a post about it.  For other tutorials on how to do this checkout these:</p>  	  
 	  <ul>
@@ -145,5 +143,3 @@ image: post_one.jpg
 	  <h2>In Conclusion</h2>
 	  <p>I hope this sparks you to try out GitHub, Jekyll, Twitter Bootstrap and other open source web resources.  I have just begun to scratch the surface here and this blog doesn't attempt to cover all of details but I would like to hear what other cool integrations people are doing on their blogs.</p>	  
 	  <hr>
-	</div>
-</div>

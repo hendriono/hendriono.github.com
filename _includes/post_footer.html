@@ -21,31 +21,11 @@
 </div>
 
 <div class="row"> 
-<<<<<<< HEAD
-    <div class="span12 columns">
-    {% if page.comments %}    
-    <h2>Area Komentar</h2>
-      <p>Jangan ragu untuk mengomentari artikel tetapi tetap sesuai dengan topik.</p> 
-    <div id="disqus_thread"></div>
-    <script type="text/javascript">
-      var disqus_shortname = '{{ site.author.disqus_shortname }}';
-      var disqus_identifier = '{{ page.url }}';
-      var disqus_url = 'http://hendriono.github.com{{ page.url }}';
-      (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-      })();
-    </script>
-    <noscript>Mohon aktifkan JavaScript untuk melihat <a href="http://disqus.com/?ref_noscript">komentar yang disediakan oleh Disqus.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink">komentar blog disediakan oleh <span class="logo-disqus">Disqus</span></a>
-=======
     <div class="span12 columns" id="post-comments">
     {% if page.comments %}   
     <h2><a href="http://hendriono.github.com{{ page.url }}#disqus_thread" data-disqus-identifier="{{ page.url }}"></a></h2>
     <div id="disqus_thread"></div>
     <button class="btn btn-small" onclick="$.ajaxSetup({cache:true});$.getScript(&quot;http://hendgithub.disqus.com/embed.js&quot;);$.ajaxSetup({cache:false});$(this).remove();" style="width:100%;margin:10px auto;" type="button"><strong>Klik untuk membuka area komentar atau untuk menuliskan sebuah komentar</strong></button>
->>>>>>> b5b83b3b3d91dd9d1c2be4bcd014612cd5f64cfe
     {% endif %}
   </div>
 </div>
