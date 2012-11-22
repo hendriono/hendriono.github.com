@@ -1,6 +1,6 @@
 ---
 layout: layout
-title: "Halaman Utama"
+title: "Beranda"
 ---
 
 {% for post in site.posts offset: 0 limit: 50 %}
