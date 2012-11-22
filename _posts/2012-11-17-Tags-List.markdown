@@ -23,7 +23,7 @@ You can list sitewide tags by passing in the <code>site.tags</code> variable:
 <pre class="prettyprint linenums">&lt;ul&gt;
   &#123;% assign tags_list = site.tags %&#125;
   &#123;% include helpers/tags_list.html %&#125;
-&lt;/ul&gt
+&lt;/ul&gt;
 </pre>
 
 <strong>List Tags for a Specific Post</strong>
