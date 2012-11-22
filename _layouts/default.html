@@ -1,35 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% if page.description %}
-    <meta name="description" content="{{ page.summary }}">
-    {% else %}
-    <meta name="description" content="{{ site.description }}">
-    {% endif %}
-    <meta name="author" content="{{ site.author.name }}">
-    <title>{{ site.maintitle }} - {{ page.title }}</title>
-    <link rel="alternate" type="application/rss+xml" href="http://feeds.feedburner.com/github/WnAr" title="Hendriono Blog Feed - hendriono.github.org">
-
-    <!-- Stylesheet -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="/css/bootstrap-responsive.min.css" rel="stylesheet" />
-    <link href="/css/docs.css" rel="stylesheet">
-    <link href="/js/prettify/prettify.css" rel="stylesheet">
-
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="/favicon.png">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/ico/144.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/ico/114.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/ico/72.png">
-    <link rel="apple-touch-icon-precomposed" href="/ico/57.png">
-  </head>
+{% include head.html %}
   
   <body data-spy="scroll" data-target=".subnav" data-offset="50">
   
@@ -44,6 +13,7 @@
     {% include footer.html %}
     {% include scripts.html %}
     {% include analytics.html %}
+    {% include chromeframe.html %}
 
   </body>
 </html>
