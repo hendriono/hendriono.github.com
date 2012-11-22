@@ -851,3 +851,10 @@ a.social.gplus {
 a.social.gplus:hover {
   background: url(/img/social_icons.png) -170px -34px no-repeat;
 }
+iframe.github-btn {
+  background-color: transparent;
+  border:none;
+  overflow:hidden;
+  height: 30px;
+  width:90px;
+}
