@@ -13,7 +13,7 @@
   <meta property="og:type" content="blog">
   <meta property="og:title" content="{{ page.title }}">
   <meta property="og:image" content="">
-  <meta property="og:url" content="{{ page.url }}">
+  <meta property="og:url" content="{{ site.production_url }}{{ page.url }}">
   <meta property="og:site_name" content="{{ site.maintitle }}">
   <meta property="fb:app_id" content="">
   <meta property="fb:admins" content="100001564828259">
@@ -27,7 +27,7 @@
   <meta property="og:description" content="{{ site.description }}">
   {% endif %}
   <title>{{ page.title }} - {{ site.maintitle }}</title>
-  <link rel="canonical" href="{{ page.url | canonical }}">
+  <link rel="canonical" href="{{ site.production_url }}{{ page.url | canonical }}">
   <link rel="alternate" type="application/atom+xml" title="{{ site.maintitle }} Feed" href="/atom.xml">
   <link rel="alternate" type="application/rss+xml" href="http://feeds.feedburner.com/kyllblogit" title="{{ site.maintitle }} RSS">
 
