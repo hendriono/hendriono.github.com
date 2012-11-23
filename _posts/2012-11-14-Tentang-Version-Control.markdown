@@ -11,7 +11,7 @@ comments: true
 summary: Artikel ini membahas tentang version control sebagai awal dalam memahami bagaimana kerja Git. Hal ini untuk mengetahui latar belakang lahirnya Git. Sedikit perbandingan antara Git dengan jenis repository lainnya
 description: "Artikel ini membahas tentang version control sebagai awal dalam memahami bagaimana kerja Git. Hal ini untuk mengetahui latar belakang lahirnya Git dan sekelumit perbandingan antara Git dengan jenis repository lainnya"
 robots: "noodp, noydir"
-image: post_one.jpg
+image: giticle.jpg
 ---
 
 <p>Apa itu version control, dan kenapa anda harus peduli? Version control adalah sebuah sistem yang mencatat setiap perubahan terhadap sebuah berkas atau kumpulan berkas sehingga pada suatu saat anda dapat kembali kepada salah satu versi dari berkas tersebut. Sebagai contoh dalam buku ini anda akan menggunakan kode sumber perangkat lunak sebagai berkas yang akan dilakukan version controlling, meskipun pada kenyataannya anda dapat melakukan ini pada hampir semua tipe berkas di komputer.</p>
