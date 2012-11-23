@@ -26,7 +26,7 @@ Usage:
 {% else %}
   {% for category in categories_list %} 
   	<li><a href="{{ site.var.categories_path }}#{{ category[0] }}-ref">
-  		{{ category[0] | join: "/" }} <span>{{ category[1].size }}</span>
+  		<span class="label label-info">{{ category[0] | join: "/" }}</span> <span class="label label-inverse">{{ category[1].size }}</span>
   	</a></li>
   {% endfor %}
 {% endif %}
