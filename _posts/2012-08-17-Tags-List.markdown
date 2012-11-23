@@ -4,7 +4,7 @@ title: Tags List
 category: Coding
 tags: jekyll github
 year: 2012
-month: 11
+month: 08
 day: 17
 published: true
 comments: true
