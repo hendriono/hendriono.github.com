@@ -23,16 +23,14 @@ image: post_one.jpg
 
 <p>Untuk mengatasi permasalahan ini, para programmer mengembangkan berbagai VCS lokal yang memiliki sebuah basis data sederhana untuk menyimpan semua perubahan pada berkas yang berada dalam cakupan revision control (Lihat Gambar 1-1).</p>
 
-<figure><img src="http://git-scm.com/figures/18333fig0101-tn.png" alt="Diagram version control lokal" class="img-polaroid media-object">
-<figcaption>>Gambar 1-1. Diagram version control lokal.<figcaption></figure>
+<figure><img src="http://git-scm.com/figures/18333fig0101-tn.png" alt="Diagram version control lokal" class="img-polaroid media-object"><figcaption>Gambar 1-1. Diagram version control lokal.</figcaption></figure>
 
 <p>Salah satu perkakas VCS yang populer adalah rcs, kakas ini masih didistribusikan dengan berbagai komputer pada masa kini. Bahkan sistem operasi Mac OS X menyertakan rcs ketika menginstal Developer Tools. Kakas ini pada dasarnya bekerja dengan cara menyimpan kumpulan patch dari satu perubahan ke perubahan lainnya dalam format khusus pada disk; ini kemudian dapat digunakan untuk menciptakan kembali wujud/keadaan suatu berkas pada suatu saat dengan cara menggunakan patch yang berkesesuaian dengan berkas dan waktu yang diinginkan.</p>
 
 <h3>Version Control Systems Terpusat</h3>
 <p>Permasalahan berikutnya yang dihadapi adalah para pengembang perlu melakukan kolaborasi dengan pengembang pada sistem lainnya. Untuk mengatasi permasalahan ini maka dibangunlah Centralized Version Control Systems (CVCSs). Sistem ini, diantaranya CVS, Subversion, dan Perforce, memiliki sebuah server untuk menyimpan setiap versi berkas, dan beberapa klien yang dapat melakukan checkout berkas dari server pusat. Untuk beberapa tahun, sistem seperti ini menjadi standard untuk version control (lihat Gambar 1-2).</p>
 
-<figure><img src="http://git-scm.com/figures/18333fig0102-tn.png" alt="Diagram version control lokal" class="img-polaroid media-object">
-<figcaption>Gambar 1-2. Diagram version control terpusat.<figcaption><figure>
+<figure><img src="http://git-scm.com/figures/18333fig0102-tn.png" alt="Diagram version control lokal" class="img-polaroid media-object"><figcaption>Gambar 1-2. Diagram version control terpusat.</figcaption></figure>
 
 <p>Sistem seperti ini memiliki beberapa kelebihan, terutama jika dibandingkan dengan VCS lokal. Misalnya, setiap orang pada tingkat tertentu mengetahui apa yang orang lain lakukan pada proyek. Administrator memiliki kendali yang mantap atas siapa yang dapat melakukan apa; dan adalah jauh lebih mudah untuk mengelola sebuah CVCS dibandingkan menangani database lokal pada setiap client.</p>
 
@@ -41,8 +39,7 @@ image: post_one.jpg
 <h3>Version Control System Terdistribusi</h3>
 <p>Inilah saatnya bagi Distributed Version Control Systems untuk mengambil tempat. dalam sebuah DVCS (seperti Git, Mercurial, Bazaar atau Darcs), klien tidak hanya melakukan checkout untuk snapshot terakhir setiap berkas, namun mereka (klien) memiliki salinan penuh dari repositori tersebut. Jadi, jika server mati, dan sistem berkolaborasi melalui server tersebut, maka klien manapun dapat mengirimkan salinan repositori tersebut kembali ke server. Setiap checkout pada DVCS merupakan sebuah backup dari keseluruhan data (lihat Gambar 1-3).</p>
 
-<figure><img src="http://git-scm.com/figures/18333fig0103-tn.png" alt="Diagram version control lokal" class="img-polaroid media-object"></center>
-<figcaption>Gambar 1-3. Diagram distributed version control.<figcaption><figure>
+<figure><img src="http://git-scm.com/figures/18333fig0103-tn.png" alt="Diagram version control lokal" class="img-polaroid media-object"><figcaption>Gambar 1-3. Diagram distributed version control.</figcaption></figure>
 
 <p>Lebih jauh lagi, kebanyakan sistem seperti ini mampu menangani sejumlah remote repository dengan baik, jadi anda dapat melakukan kolaborasi dengan berbagai kelompok kolaborator dalam berbagai cara secara bersama-sama pada suatu proyek. Hal ini memungkinkan anda untuk menyusun beberapa jenis alur kerja yang tidak mungkin dilakukan pada sistem terpusat, seperti hierarchical model.</p>
 <hr>

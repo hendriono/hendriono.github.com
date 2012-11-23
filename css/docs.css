@@ -859,3 +859,10 @@ iframe.github-btn {
   height: 20px;
   width:220px;
 }
+figcaption {
+  clear: left;
+  margin: .75em 0;
+  text-align: center;
+  font-style: italic;
+  line-height: 1.5em;
+}
