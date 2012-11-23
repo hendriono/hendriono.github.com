@@ -6,6 +6,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="{{ page.robots }}">
+  <meta name="author" content="{{ site.author.name }}">
+  <meta itemprop="name" content="{{ site.maintitle }}">
+  <meta itemprop="image" content="">
+  <meta property="og:type" content="blog">
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="{{ page.url }}">
+  <meta property="og:site_name" content="{{ site.maintitle }}">
+  <meta property="fb:app_id" content="">
+  <meta property="fb:admins" content="100001564828259">
   {% if page.description %}
   <meta name="description" content="{{ page.description }}">
   <meta itemprop="description" content="{{ page.description }}">
@@ -15,16 +26,10 @@
   <meta itemprop="description" content="{{ site.description }}">
   <meta property="og:description" content="{{ site.description }}">
   {% endif %}
-  <meta name="author" content="{{ site.author.name }}">
-  <meta itemprop="name" content="{{ site.maintitle }}">
-  <meta itemprop="image" content="/img/favicon.jpeg">
-  <meta property="og:image" content="">
-  
-  <meta property="og:title" content="{{ page.title }}">
-
   <title>{{ page.title }} - {{ site.maintitle }}</title>
-  
-  <link rel="alternate" type="application/rss+xml" href="http://feeds.feedburner.com/kyllblogit" title="Kyll BloGit RSS">
+  <link rel="canonical" href="{{ page.url | canonical }}">
+  <link rel="alternate" type="application/atom+xml" title="{{ site.maintitle }} Feed" href="/atom.xml">
+  <link rel="alternate" type="application/rss+xml" href="http://feeds.feedburner.com/kyllblogit" title="{{ site.maintitle }} RSS">
 
   <!-- Stylesheet -->
   <link href="/css/bootstrap.min.css" rel="stylesheet" />
@@ -33,7 +38,7 @@
   <link href="/js/prettify/prettify.css" rel="stylesheet">
 
   <!-- Fav dan Touch Icons -->
-  <link rel="shortcut icon" href="/favicon.png">
+  <link rel="shortcut icon" href="/favicon.ico" type='image/x-icon'>
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/ico/144.png">
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/ico/114.png">
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/ico/72.png">
