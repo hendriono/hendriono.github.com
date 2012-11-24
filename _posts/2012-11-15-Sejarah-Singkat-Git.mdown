@@ -22,4 +22,4 @@ image: giticle.jpg
 <li>Terdistribusi secara penuh</li>
 <li>Mampu menangani proyek besar seperti Kernel Linux secara efisien (dalam kecepatan dan ukuran data)</li>
 </ul>
-<p>Sejak kelahirannya pada tahun 2005, Git telah berkembang dan semakin mudah digunakan serta hingga saat ini masih mempertahankan kualitasnya tersebut. Git luar biasa cepat, sangat efisien dalam proyek besar, dan memiliki sistem pencabangan yang luar biasa untuk pengembangan non-linear (Lihat Bab 3).</p>
+<p>Sejak kelahirannya pada tahun 2005, Git telah berkembang dan semakin mudah digunakan serta hingga saat ini masih mempertahankan kualitasnya tersebut. Git luar biasa cepat, sangat efisien dalam proyek besar, dan memiliki sistem pencabangan yang luar biasa untuk pengembangan non-linear (Lihat Bab 3).</p><hr>
