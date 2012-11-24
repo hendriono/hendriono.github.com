@@ -14,7 +14,7 @@ title: "Beranda"
       </div>
       <div class="span6 media-body">
         <h4 class="media-heading entry-title"><strong><a href="{{ post.url }}">{{ post.title }}</a></strong></h4>
-        <p class="entry-content">{{ post.summary }}</p>
+        <p class="entry-summary">{{ post.summary }}</p>
         <p>
         <i class="icon-calendar"></i> <abbr class="published" title="">{{ post.date | date: "%B %e, %Y" }}</abbr>
         | <i class="icon-tags"></i> {% assign tags_list = post.tags %} {% include helpers/tags_list.html %}
