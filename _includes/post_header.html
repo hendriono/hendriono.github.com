@@ -1,13 +1,13 @@
 <header>
 <div class="row">
   <div class="span12 column">
-    <h1>{{ page.title }}</h1>
+    <h1 class="entry-title">{{ page.title }}</h1>
   </div>
 </div>
 
 <div class="row">
   <div class="span12 column">
-    <p><i class="icon-calendar"></i> {{ page.date | date: "%B %e, %Y" }} | {{ page.category }} | <i class="icon-tags"></i> {% assign tags_list = page.tags %} {% include helpers/tags_list.html %}</p>
+    <p><i class="icon-calendar"></i> <abbr class="published" title="">{{ page.date | date: "%B %e, %Y" }}</abbr> | {{ page.category }} | <i class="icon-tags"></i> {% assign tags_list = page.tags %} {% include helpers/tags_list.html %}</p>
     <div><a href="https://twitter.com/share" class="twitter-share-button" data-via="dedehendriono" data-lang="id" data-related="BloGit">Tweet</a> <span class="g-plus" data-action="share" data-annotation="bubble"></span></div>
   </div> 
 </div>

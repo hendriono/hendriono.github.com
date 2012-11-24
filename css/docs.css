@@ -869,3 +869,6 @@ figcaption {
   font-style: italic;
   line-height: 1.5em;
 }
+.nonVisual {
+  display:none;
+}

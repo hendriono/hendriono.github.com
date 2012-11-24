@@ -13,10 +13,10 @@ title: "Beranda"
         </a>
       </div>
       <div class="span6 media-body">
-        <h4 class="media-heading"><strong><a href="{{ post.url }}">{{ post.title }}</a></strong></h4>
-        <p>{{ post.summary }}</p>
+        <h4 class="media-heading entry-title"><strong><a href="{{ post.url }}">{{ post.title }}</a></strong></h4>
+        <p class="entry-content">{{ post.summary }}</p>
         <p>
-        <i class="icon-calendar"></i> {{ post.date | date: "%B %e, %Y" }}  
+        <i class="icon-calendar"></i> <abbr class="published" title="">{{ post.date | date: "%B %e, %Y" }}</abbr>
         | <i class="icon-tags"></i> {% assign tags_list = post.tags %} {% include helpers/tags_list.html %}
         </p>
         <div class="row"><div class="span6 column"><span class="pull-right"><a href="{{ post.url }}" class="btn btn-small">Selengkapnya <i class="icon-chevron-right"></i></a></span></div></div>
