@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setup Git Untuk Pertama Kali
+title: 1.5 Setup Git Untuk Pertama Kali
 category: Repository
 tags: Git
 year: 2012

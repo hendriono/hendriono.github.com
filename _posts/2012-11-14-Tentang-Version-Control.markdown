@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tentang Version Control
+title: 1.1 Tentang Version Control
 category: Repository
 tags: Git
 year: 2012

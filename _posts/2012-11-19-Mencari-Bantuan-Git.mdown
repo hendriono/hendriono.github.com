@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Mencari Bantuan Git
+title: 1.6 Mencari Bantuan Git
 category: Repository
 tags: Git
 year: 2012
@@ -19,4 +19,4 @@ $ git &lt;verb&gt; --help
 $ man git-&lt;verb&gt;</pre>
 <p>Sebagai contoh, anda dapat memperoleh halaman manual untuk perintah config dengan menjalankan perintah:</p>
 <pre>$ git help config</pre>
-<p>Perintah ini sangatlah luar biasa karena anda dapat mengaksesnya kapan saja, bahkan ketika sedang offline. Jika manpage (halaman manual) dan buku ini tidaklah cukup, dan anda membutuhkan pertolongan dari seorang manusia, anda dapat mencoba channel <code>#git</code> atau <code>#github</code> pada Freenode IRC server (<code>irc.freenode.net</code>). Channel ini biasanya berisi ratusan orang yang memiliki pengetahuan tentang Git dan sering kali memiliki kemauan untuk menolong.</p><hr><h3>Kesimpulan</h3><p>Sekarang anda memiliki pengetahuan dasar mengenai apa yang dimaksud dengan Git dan perbedaannya dari VCS terpusat yang mungkin pernah anda gunakan. Anda pun seharusnya sekarang memiliki Git pada sistem anda yang telah diatur dengan identitas personal anda. Sekarang saatnya untuk mempelajari beberapa dasar Git.</p>
+<p>Perintah ini sangatlah luar biasa karena anda dapat mengaksesnya kapan saja, bahkan ketika sedang offline. Jika manpage (halaman manual) dan buku ini tidaklah cukup, dan anda membutuhkan pertolongan dari seorang manusia, anda dapat mencoba channel <code>#git</code> atau <code>#github</code> pada Freenode IRC server (<code>irc.freenode.net</code>). Channel ini biasanya berisi ratusan orang yang memiliki pengetahuan tentang Git dan sering kali memiliki kemauan untuk menolong.</p><hr><h3>Kesimpulan</h3><p>Sekarang anda memiliki pengetahuan dasar mengenai apa yang dimaksud dengan Git dan perbedaannya dari VCS terpusat yang mungkin pernah anda gunakan. Anda pun seharusnya sekarang memiliki Git pada sistem anda yang telah diatur dengan identitas personal anda. Sekarang saatnya untuk mempelajari beberapa dasar Git.</p><hr>

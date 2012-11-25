@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sejarah Singkat Git
+title: 1.2 Sejarah Singkat Git
 category: Repository
 tags: Git
 year: 2012

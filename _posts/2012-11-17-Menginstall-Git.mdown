@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Menginstall Git
+title: 1.4 Menginstall Git
 category: Repository
 tags: Git
 year: 2012
