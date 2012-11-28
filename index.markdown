@@ -20,7 +20,7 @@ title: "Beranda"
         <div class="row"><div class="span6 column"><span class="pull-right"><a href="{{ post.url }}" class="btn btn-small">Selengkapnya <i class="icon-chevron-right"></i></a></span></div></div>
       </div>
     </div> 
-    <hr>
+    <hr class="soften">
   </div>
 </div>
 {% endfor %}	
