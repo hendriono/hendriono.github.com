@@ -3,7 +3,7 @@ layout: layout
 title: "Beranda"
 ---
 
-{% for post in site.posts offset: 0 limit: 50 %}
+{% for post in site.posts offset: 0 limit: 10 %}
 <div class="row">
   <div class="span8">
     <div class="row media">
