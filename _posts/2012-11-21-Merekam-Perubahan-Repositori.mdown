@@ -13,16 +13,14 @@ description: "Anda sudah memiliki repositori Git yang bonafide dan sebuah salina
 robots: "noodp, noydir"
 image: giticle.jpg
 ---
-<p>Anda sudah memiliki repositori Git yang bonafide dan sebuah salinan kerja dari semua berkas untuk proyek tersebut. Anda harus membuat beberapa perubahan dan commit perubahan tersebut ke dalam repositori setiap saat proyek mencapai sebuah keadaan yang ingin Anda rekam.</p><p>Ingat bahwa setiap berkas di dalam direktori kerja Anda dapat berada di 2 keadaan: terpantau atau tak-terpantau. Berkas terpantau adalah berkas yang sebelumnya berada di snapshot terakhir; mereka dapat berada dalam kondisi belum terubah, terubah, ataupun staged (berada di area stage). Berkas tak-terpantau adalah kebalikannya - merupakan berkas-berkas di dalam direktori kerja yang tidak berada di dalam snapshot terakhir dan juga tidak berada di area staging. Ketika Anda pertama kali menduplikasi sebuah repositori, semua berkas Anda akan terpantau dan belum terubah karena Anda baru saja melakukan checkout dan belum mengubah apapun.</p><p>Sejalan dengan proses edit yang Anda lakukan terhadap berkas-berkas tersebut, Git mencatatnya sebagai terubah, karena Anda telah mengubahnya sejak terakhir commit. Anda kemudian memasukkan berkas-berkas terubah ini ke dalam area stage untuk kemudian dilakukan commit, dan terus siklus ini berulang. Siklus perubahan ini diilustrasikan di Figure-2.1 </p><figure><img src="http://git-scm.com/figures/18333fig0201-tn.png" class="img-polaroid media-object" alt="Siklus hidup dari status file Anda."><figcaption>Figure 2-1. Siklus hidup dari status file Anda.</figcaption></figure><hr><h3>Cek Status dari Berkas Anda</h3><p>Alat utama yang Anda gunakan untuk menentukan berkas-berkas mana yang berada dalam keadaan tertentu adalah melalui perintah <code>git status</code>. Jika Anda menggunakan alat ini langsung setelah sebuah <code>clone</code>, Anda akan melihat serupa seperti di bawah ini:</p>
-<pre>$ git status
+<p>Anda sudah memiliki repositori Git yang bonafide dan sebuah salinan kerja dari semua berkas untuk proyek tersebut. Anda harus membuat beberapa perubahan dan commit perubahan tersebut ke dalam repositori setiap saat proyek mencapai sebuah keadaan yang ingin Anda rekam.</p><p>Ingat bahwa setiap berkas di dalam direktori kerja Anda dapat berada di 2 keadaan: terpantau atau tak-terpantau. Berkas terpantau adalah berkas yang sebelumnya berada di snapshot terakhir; mereka dapat berada dalam kondisi belum terubah, terubah, ataupun staged (berada di area stage). Berkas tak-terpantau adalah kebalikannya - merupakan berkas-berkas di dalam direktori kerja yang tidak berada di dalam snapshot terakhir dan juga tidak berada di area staging. Ketika Anda pertama kali menduplikasi sebuah repositori, semua berkas Anda akan terpantau dan belum terubah karena Anda baru saja melakukan checkout dan belum mengubah apapun.</p><p>Sejalan dengan proses edit yang Anda lakukan terhadap berkas-berkas tersebut, Git mencatatnya sebagai terubah, karena Anda telah mengubahnya sejak terakhir commit. Anda kemudian memasukkan berkas-berkas terubah ini ke dalam area stage untuk kemudian dilakukan commit, dan terus siklus ini berulang. Siklus perubahan ini diilustrasikan di Figure-2.1 </p><figure><img src="http://git-scm.com/figures/18333fig0201-tn.png" class="img-polaroid media-object" alt="Siklus hidup dari status file Anda."><figcaption>Figure 2-1. Siklus hidup dari status file Anda.</figcaption></figure><hr><h3>Cek Status dari Berkas Anda</h3><p>Alat utama yang Anda gunakan untuk menentukan berkas-berkas mana yang berada dalam keadaan tertentu adalah melalui perintah <code>git status</code>. Jika Anda menggunakan alat ini langsung setelah sebuah <code>clone</code>, Anda akan melihat serupa seperti di bawah ini:</p><pre>$ git status
 # On branch master
-nothing to commit (working directory clean)</pre>
-<p>Ini berarti Anda memiliki direktori kerja yang bersih-dengan kata lain, tidak ada berkas terpantau yang terubah. Git juga tidak melihat berkas-berkas yang tak terpantau, karena pasti akan dilaporkan oleh alat ini. Juga, perintah ini memberitahu Anda tentang cabang tempat Anda berada. Pada saat ini, cabang akan selalu berada di master, karena sudah menjadi default-nya; Anda tidak perlu khawatir tentang cabang dulu. Bab berikutnya akan membahas tentang percabangan dan referensi secara lebih detil.</p><p>Mari kita umpamakan Anda menambah sebuah berkas baru ke dalam proyek Anda, misalnya sesederhana berkas README. Jika file tersebut belum ada sebelumnya, dan Anda melakukan <code>git status</code>, Anda akan melihatnya sebagai berkas tak-terpantau seperti berikut ini:</p>
+nothing to commit (working directory clean)</pre><p>Ini berarti Anda memiliki direktori kerja yang bersih-dengan kata lain, tidak ada berkas terpantau yang terubah. Git juga tidak melihat berkas-berkas yang tak terpantau, karena pasti akan dilaporkan oleh alat ini. Juga, perintah ini memberitahu Anda tentang cabang tempat Anda berada. Pada saat ini, cabang akan selalu berada di master, karena sudah menjadi default-nya; Anda tidak perlu khawatir tentang cabang dulu. Bab berikutnya akan membahas tentang percabangan dan referensi secara lebih detil.</p><p>Mari kita umpamakan Anda menambah sebuah berkas baru ke dalam proyek Anda, misalnya sesederhana berkas README. Jika file tersebut belum ada sebelumnya, dan Anda melakukan <code>git status</code>, Anda akan melihatnya sebagai berkas tak-terpantau seperti berikut ini:</p>
 <pre>$ vim README
 $ git status
 # On branch master
 # Untracked files:
-#   (use "git add <file>..." to include in what will be committed)
+#   (use "git add &lt;file&gt;..." to include in what will be committed)
 #
 #	README
 nothing added to commit but untracked files present (use "git add" to track)</pre>
@@ -32,7 +30,7 @@ nothing added to commit but untracked files present (use "git add" to track)</pr
 <pre>$ git status
 # On branch master
 # Changes to be committed:
-#   (use "git reset HEAD <file>..." to unstage)
+#   (use "git reset HEAD &lt;file&gt;..." to unstage)
 #
 #	new file:   README
 #</pre>
@@ -40,12 +38,12 @@ nothing added to commit but untracked files present (use "git add" to track)</pr
 <pre>$ git status
 # On branch master
 # Changes to be committed:
-#   (use "git reset HEAD <file>..." to unstage)
+#   (use "git reset HEAD &lt;file&gt;..." to unstage)
 #
 #	new file:   README
 #
 # Changed but not updated:
-#   (use "git add <file>..." to update what will be committed)
+#   (use "git add &lt;file&gt;..." to update what will be committed)
 #
 #	modified:   benchmarks.rb
 #</pre>
@@ -54,7 +52,7 @@ nothing added to commit but untracked files present (use "git add" to track)</pr
 $ git status
 # On branch master
 # Changes to be committed:
-#   (use "git reset HEAD <file>..." to unstage)
+#   (use "git reset HEAD &lt;file&gt;..." to unstage)
 #
 #	new file:   README
 #	modified:   benchmarks.rb
@@ -64,13 +62,13 @@ $ git status
 $ git status
 # On branch master
 # Changes to be committed:
-#   (use "git reset HEAD <file>..." to unstage)
+#   (use "git reset HEAD &lt;file&gt;..." to unstage)
 #
 #	new file:   README
 #	modified:   benchmarks.rb
 #
 # Changed but not updated:
-#   (use "git add <file>..." to update what will be committed)
+#   (use "git add &lt;file&gt;..." to update what will be committed)
 #
 #	modified:   benchmarks.rb
 #</pre>
@@ -79,7 +77,7 @@ $ git status
 $ git status
 # On branch master
 # Changes to be committed:
-#   (use "git reset HEAD <file>..." to unstage)
+#   (use "git reset HEAD &lt;file&gt;..." to unstage)
 #
 #	new file:   README
 #	modified:   benchmarks.rb
@@ -99,12 +97,12 @@ doc/*.txt # abaikan doc/notes.txt, tapi bukan doc/server/arch.txt</pre><hr>
 <pre>$ git status
 # On branch master
 # Changes to be committed:
-#   (use "git reset HEAD <file>..." to unstage)
+#   (use "git reset HEAD &lt;file&gt;..." to unstage)
 #
 #	new file:   README
 #
 # Changed but not updated:
-#   (use "git add <file>..." to update what will be committed)
+#   (use "git add &lt;file&gt;..." to update what will be committed)
 #
 #	modified:   benchmarks.rb
 #</pre>
@@ -188,7 +186,7 @@ Dalam hal ini, saat terakhir Anda jalankan <code>git status</code>, Anda telah m
 # with '#' will be ignored, and an empty message aborts the commit.
 # On branch master
 # Changes to be committed:
-#   (use "git reset HEAD <file>..." to unstage)
+#   (use "git reset HEAD &lt;file&gt;..." to unstage)
 #
 #       new file:   README
 #       modified:   benchmarks.rb 
@@ -218,7 +216,7 @@ $ git status
 # On branch master
 #
 # Changed but not updated:
-#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git add/rm &lt;file&gt;..." to update what will be committed)
 #
 #       deleted:    grit.gemspec
 #</pre>
@@ -229,7 +227,7 @@ $ git status
 # On branch master
 #
 # Changes to be committed:
-#   (use "git reset HEAD <file>..." to unstage)
+#   (use "git reset HEAD &lt;file&gt;..." to unstage)
 #
 #       deleted:    grit.gemspec
 #</pre>
@@ -248,7 +246,7 @@ $ git status
 # Your branch is ahead of 'origin/master' by 1 commit.
 #
 # Changes to be committed:
-#   (use "git reset HEAD <file>..." to unstage)
+#   (use "git reset HEAD &lt;file&gt;..." to unstage)
 #
 #       renamed:    README.txt -> README
 #</pre>
