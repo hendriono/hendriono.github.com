@@ -1,4 +1,4 @@
-<h2>Artikel Terbaru</h2>
+<h2>Artikel Terbaru</h2><hr>
 <ol>
   {% for post in site.posts limit:10 %}
     <li>{{ post.date | date: "%Y - %B" }} <a href="{{ post.url }}">{{ post.title }}</a></li>  
