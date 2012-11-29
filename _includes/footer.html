@@ -1,14 +1,14 @@
 <div class="hidden vcard" itemscope itemtype="http://schema.org/Person">
   <span class="fn" itemprop="name">Dede Hendriono</span>
   <img class="photo" alt="Dede Hendriono" src="/img/favicon.jpeg" itemprop="image"/>
-  <div class="adr" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-    <span class="street-address" itemprop="streetAddress">Jl. Raya Pangandaran 212</span>
-    <span class="locality" itemprop="addressLocality">Padaherang</span>,
-    <span class="region" title="Pangandaran" itemprop="addressRegion">Pangandaran</span>
-    <span class="postal-code" itemprop="postalCode">46384</span>
+  <address class="adr" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+    <span class="street-address" itemprop="streetAddress">Jl. Raya Pangandaran KM 2</span>
+    <span class="locality" itemprop="addressLocality">Banjarsari</span>,
+    <span class="region" title="Pangandaran" itemprop="addressRegion">Ciamis</span>
+    <span class="postal-code" itemprop="postalCode">46383</span>
     <span class="country-name" itemprop="addressCountry">Indonesia</span>
-  </div>
-  <span class="tel" itemprop="telephone">081000000000</span>
+  </address>
+  <span class="tel" itemprop="telephone">+6281909669606</span>
   <a class="email" href="mailto:hendriono@gmail.com" itemprop="email">mailto:hendriono@gmail.com</a>
   <a class="url" href="http://hendriono.github.com" itemprop="url">hendriono.github.com</a>
   <a class="org" href="http://modification-blog.blogspot.com" itemprop="colleague">Blogger Tune-Up</a>
@@ -16,8 +16,8 @@
 
 <footer class="footer">
   <div class="container">
-    <div class="pull-right btn-group">{% if page.previous.url %} <a class="btn btn-small btn-info" href="{{page.previous.url}}" title="Artikel Sebelumnya: {{page.previous.title}}" rel="prev"><i class="icon-chevron-left"></i> Sebelumnya</a>  {% endif %}  |  <a id="atas" class="btn btn-small btn-info" href="javascript:void(0)"><i class="icon-arrow-up"></i> Atas</a>  |  {% if page.next.url %}  <a class="btn btn-small btn-info" href="{{page.next.url}}" title="Artikel Berikutnya: {{page.next.title}}" rel="next">Selanjutnya <i class="icon-chevron-right"></i></a>  {% endif %} </div>
-    <p>&#169; 2012 <a href="{{ site.production_url }}">{{ site.author.name }}</a>. Halaman terakhir ditulis/diperbaiki pada {{ site.time | date: "%B %e, %Y" }}</p>
+    <div class="pull-right btn-group">{% if page.previous.url %} <a class="btn btn-small" href="{{page.previous.url}}" title="Artikel Sebelumnya: {{page.previous.title}}" rel="prev"><i class="icon-chevron-left"></i> Sebelumnya</a>  {% endif %}  |  <a id="atas" class="btn btn-small btn-warning" href="javascript:void(0)"><i class="icon-arrow-up"></i> Atas</a>  |  {% if page.next.url %}  <a class="btn btn-small" href="{{page.next.url}}" title="Artikel Berikutnya: {{page.next.title}}" rel="next">Selanjutnya <i class="icon-chevron-right"></i></a>  {% endif %} </div>
+    <p><small>&#169; 2012 <a href="{{ site.production_url }}">{{ site.author.name }}</a>. Halaman terakhir ditulis/diperbaiki pada {{ site.time | date: "%B %e, %Y" }}</small></p>
     <p><small>Kecuali dinyatakan lain, isi dari halaman ini dibawah lisensi <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>, dan contoh kode dibawah lisensi <a rel="license" href="http://www.apache.org/licenses/LICENSE-2.0">Apache 2.0</a>.</small></p>
   </div>
 </footer>
