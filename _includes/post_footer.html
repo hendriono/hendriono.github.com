@@ -1,7 +1,7 @@
-<div class="row"> 
+<hr><div class="row"> 
   <div class="span12 column">
     {% if site.related_posts.size >= 1 %}
-      <h3>Artikel Terkait</h3>
+      <h3><i class="icon-thumbs-up"></i> Artikel Terkait</h3>
       <ul>
         {% for post in site.related_posts limit: 5 %}
         <li><a href="{{ post.url }}">{{ post.title }}</a> <span>[{{ post.date | date_to_string }}]</span></li>
@@ -16,7 +16,7 @@
 <div class="row"> 
     <div class="span12 columns" id="post-comments">
     {% if page.comments %}   
-    <h3>Silahkan Berkomentar</h3>
+    <h3><i class="icon-comments"></i> Silahkan Berkomentar</h3>
     <div id="disqus_thread"></div>
     <button class="btn btn-small" onclick="$.ajaxSetup({cache:true});$.getScript(&quot;http://hendgithub.disqus.com/embed.js&quot;);$.ajaxSetup({cache:false});$(this).remove();" style="width:100%;margin:10px auto;" type="button"><strong>Klik disini untuk membuka area komentar atau untuk menuliskan sebuah komentar</strong></button>
     {% endif %}

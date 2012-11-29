@@ -33,4 +33,3 @@ image: post_three.jpg
 <p><pre><code>Assembly 'ThirdParty.dll' is valid</code></pre></p>
 <h2>Conclusion</h2>
 <p>This is certainly happy path and only works with assemblies built using .NET libraries.  If other libraries are included in the assembly you are trying to sign then you'll have to do some additional steps not listed on this post.</p>
-<hr>

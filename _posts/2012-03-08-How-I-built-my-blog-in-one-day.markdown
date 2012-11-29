@@ -141,5 +141,4 @@ image: post_one.jpg
 <p><a href="http://news.ycombinator.com/submitlink?u=http://erjjones.github.com{{ page.url }}&t={{ page.title }}" target="_blank"><img src="/img/yc500.gif" title="Submit {{ page.title }} to Hacker News" /></a></p>
 <hr>
 <h2>In Conclusion</h2>
-<p>I hope this sparks you to try out GitHub, Jekyll, Twitter Bootstrap and other open source web resources.  I have just begun to scratch the surface here and this blog doesn't attempt to cover all of details but I would like to hear what other cool integrations people are doing on their blogs.</p>   
-<hr>
+<p>I hope this sparks you to try out GitHub, Jekyll, Twitter Bootstrap and other open source web resources.  I have just begun to scratch the surface here and this blog doesn't attempt to cover all of details but I would like to hear what other cool integrations people are doing on their blogs.</p>

@@ -50,4 +50,3 @@ Finally let’s iterate through all posts:
 The source code is available at:
 <pre>./_includes/helpers/tags_list.html
 </pre>
-<hr>

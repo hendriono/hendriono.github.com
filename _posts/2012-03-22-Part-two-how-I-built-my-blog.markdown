@@ -72,4 +72,3 @@ image: post_two.jpg
 <hr>
 <h2>In Conclusion</h2>
 <p>Again, I hope this sparks you to try out GitHub, Jekyll, Twitter Bootstrap and other open source web resources.  I have just begun to scratch the surface here and this blog doesn't attempt to cover all of details but I would like to hear what other cool integrations people are doing on their blogs.</p>
-<hr>
