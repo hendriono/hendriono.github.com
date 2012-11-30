@@ -25,7 +25,7 @@ $ cd ticgit
 $ git remote 
 origin</pre>
 <p>Anda juga dapat mencantumkan <code>-v</code>, yang akan menampilkan kepada Anda URL yang telah Git simpan sebagai alamat lengkap dari nama pendek tempat server asal.</p>
-<pre>$ git remote -v
+<pre class="prettyprint linenums">$ git remote -v
 origin  git://github.com/schacon/ticgit.git</pre>
 <p>Jika Anda memiliki lebih dari satu server berjarak, perintah tersebut akan menampilkan semuanya. Sebagai contoh, repositori Grit tampak seperti berikut.</p>
 <pre class="prettyprint linenums">$ cd grit
@@ -37,7 +37,7 @@ koke      git://github.com/koke/grit.git
 origin    git@github.com:mojombo/grit.git</pre>
 <p>Ini berarti kita bisa menarik kontribusi dari pengguna manapun dengan cukup mudah. Tapi dapat dicatat bahwa hanya server berjarak <code>origin</code> yang menggunakan URL SSH, sehingga hanya itulah satu-satunya server yang dapat saya arahkan pendorongan (kita akan bahas kenapa hal ini terjadi di Bab 4).</p><hr>
 <h3>Menambah Repositori Berjarak</h3><p>Saya telah menyinggung dan memberikan beberapa peragaan bagaimana menambah repositori berjarak di bagian sebelumnya, namun berikut adalah bagaimana untuk melakukannya secara eksplisit. Untuk menambah sebuah repositori berjarak Git yang baru sebagai sebuah nama pendek yang Anda dapat referensikan secara mudah, jalankan <code>git remote add [nama pendek] [url]</code>:</p>
-<pre class="prettyprint linenums"> git remote
+<pre class="prettyprint linenums">$ git remote
 origin
 $ git remote add pb git://github.com/paulboone/ticgit.git
 $ git remote -v
