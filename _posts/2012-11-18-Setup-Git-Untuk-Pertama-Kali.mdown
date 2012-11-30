@@ -31,5 +31,5 @@ color.interactive=auto
 color.diff=auto
 ...</pre>
 <p>Anda mungkin akan melihat beberapa variable yang ditampilkan lebih dari sekali, hal ini terjadi karena variable yang sama diperoleh dari beberapa file konfigurasi berbeda (misalnya, <code>/etc/gitconfig</code> dan <code>~/.gitconfig</code>). Pada kasus seperti ini, Git hanya akan menggunakan nilai yang terlihat paling akhir saja.</p><p>Andapun dapat melihat apa nilai yang Git pergunakan untuk suatu variable secara spesifik dengan mengunakan <code>git config {key}</code>:</p>
-<pre>$ git config user.name
+<pre class="prettyprint linenums">$ git config user.name
 Dede Hendriono</pre>
