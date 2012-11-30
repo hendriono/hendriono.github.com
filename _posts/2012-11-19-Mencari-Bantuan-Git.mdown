@@ -14,7 +14,7 @@ robots: "noodp, noydir"
 image: giticle.jpg
 ---
 <p>Jika anda membutuhkan pertolongan ketika menggunakan Git, terdapat 3 cara yang dapat digunakan untuk membuka halaman manual (manpage) untuk setiap perintah Git:</p>
-<pre>$ git help &lt;verb&gt;
+<pre class="prettyprint linenums">$ git help &lt;verb&gt;
 $ git &lt;verb&gt; --help
 $ man git-&lt;verb&gt;</pre>
 <p>Sebagai contoh, anda dapat memperoleh halaman manual untuk perintah config dengan menjalankan perintah:</p>
