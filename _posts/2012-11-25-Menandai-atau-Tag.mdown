@@ -76,7 +76,7 @@ v1.4
 v1.4-lw
 v1.5</pre>
 <p>Pada saat ini, jika Anda menjalankan <code>git show</code> pada tag tersebut, Anda tidak akan melihat informasi lebih. Perinta tersebut hanya akan menampilkan commitnya.</p>
-<pre>$ git show v1.4-lw
+<pre class="prettyprint linenums">$ git show v1.4-lw
 commit 15027957951b64cf874c3557a0f3547bd83b3ff6
 Merge: 4a447f7... a6b4c97...
 Author: Dede Hendriono &lt;hendriono@contoh.net&gt;
