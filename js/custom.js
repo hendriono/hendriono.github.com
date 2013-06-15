@@ -33,7 +33,7 @@ jQuery(document).ready(function() {
       'displayLanguage': false
     });
   if (!(document.location.protocol == "file:" || document.location.host == "localhost")) {
-  $('<div class="alert alert-error">Harap berkomentar yang relevan dengan artikel ini dan hindari untuk berkomentar seperti halnya "Terima Kasih", hindari berbagi link tak ada hubungan dengan artikel, gunakan saja tombol Bintang dari Disqus sebagai gantinya. Terima kasih atas kerjasamanya, selamat membaca dan berkomentar dengan baik dan sopan. Anda dapat menggunakan <a href="http://docs.disqus.com/help/19/">beberapa tag HTML</a> jika dibutuhkan.</div>').insertAfter($("#post-comments h2"));
+  $('<div class="alert alert-error">Harap berkomentar yang relevan dengan artikel ini dan hindari untuk berkomentar seperti halnya "Terima Kasih", hindari berbagi link tak ada hubungan dengan artikel, gunakan saja tombol Bintang dari Disqus sebagai gantinya. Terima kasih atas kerjasamanya, selamat membaca dan berkomentar dengan baik dan sopan. Anda dapat menggunakan <a href="http://docs.disqus.com/help/19/">beberapa tag HTML</a> jika dibutuhkan.</div>').insertAfter($("#post-comments h3"));
   var g = "?";
   $.each($("a[href$=#disqus_thread]"), function (c, b) {
     g += "url" + c + "=" + encodeURIComponent(b.href) + "&"
